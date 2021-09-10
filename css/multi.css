@@ -1,0 +1,45 @@
+#multi-select {
+  position: relative;
+  max-width: 600px;
+}
+#multi-select .bar {
+  width: 100%;
+  padding: 20px;
+  background: lightgray;
+  border: 1px solid gray;
+  min-height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-height: 50px;
+}
+#multi-select .bar .text {
+  overflow: hidden;
+}
+#multi-select .bar .text span {
+  background: white;
+  margin-left: 5px;
+  padding: 5px;
+}
+#multi-select #list-cont {
+  position: absolute;
+  width: 100%;
+  border: 1px solid gray;
+  display: none;
+  padding: 10px;
+  border-top: none;
+  max-height: 200px;
+  overflow-y: scroll;
+}
+#multi-select ul {
+  list-style: none;
+  padding-left: 20px;
+}
+#multi-select .chevron {
+  font-weight: bold;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}

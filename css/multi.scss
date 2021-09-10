@@ -1,0 +1,41 @@
+#multi-select {
+	position: relative;
+	max-width: 600px;
+	.bar {
+		width: 100%;
+		padding: 20px;
+		background: lightgray;
+		border: 1px solid gray;
+		min-height: 20px;
+		display: flex;
+		justify-content: space-between;
+		max-height: 50px;
+		.text {
+			overflow: hidden;
+			span {
+				background: white;
+				margin-left: 5px;
+				padding: 5px;
+			}
+		}
+	}
+
+	#list-cont {
+		position: absolute;
+		width: 100%;
+		border: 1px solid gray;
+		display: none;
+		padding: 10px;
+		border-top: none;
+		max-height: 200px;
+		overflow-y: scroll;
+	}
+	ul {
+		list-style: none;
+		padding-left: 20px;
+	}
+	.chevron {
+		font-weight: bold;
+		transform: rotate(-90deg);
+	}
+}
